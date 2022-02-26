@@ -11,19 +11,19 @@ const WidgetPage = () => {
   return (
     <Page
       className="WidgetPage"
-      title="Widgets"
+      title="Database"
       breadcrumbs={[{ name: 'widgets', active: true }]}
     >
       <Row>
         {numberWidgetsData.map(({ color }, index) => (
           <Col key={index} lg={4} md={6} sm={6} xs={12} className="mb-3">
             <NumberWidget
-              title="Total Profit"
+              title="Address Targeted"
               subtitle="This month"
-              number="$17,800"
+              number="11"
               color={color}
               progress={{
-                value: 75,
+                value: 100,
                 label: 'Last month',
               }}
             />
